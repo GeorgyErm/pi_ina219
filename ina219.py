@@ -91,7 +91,7 @@ class INA219:
     __CURRENT_LSB_FACTOR = 32800
 
     def __init__(self, shunt_ohms, max_expected_amps=None,
-                 busnum=None, address=__ADDRESS,
+                 busnum=1, address=__ADDRESS,
                  log_level=logging.ERROR):
         """Construct the class.
 
