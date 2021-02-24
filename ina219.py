@@ -113,7 +113,7 @@ class INA219:
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(log_level)
 
-        self._i2c = I2C.get_i2c_device(address=address, busnum=busnum)
+        self._i2c = I2C.get_i2c_device(address=address, busnum=1)
         self._shunt_ohms = shunt_ohms
         self._max_expected_amps = max_expected_amps
         self._min_device_current_lsb = self._calculate_min_current_lsb()
